@@ -387,6 +387,53 @@
         display: block;
       }
     }
+
+    /* Add this CSS to your existing styles section */
+
+/* Footer Styles */
+footer {
+  background-color: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* Ensure footer stays at bottom and is properly centered */
+.main {
+  margin-left: 280px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > section:last-of-type {
+  flex-grow: 1;
+}
+
+/* Mobile responsiveness for footer */
+@media (max-width: 1199px) {
+  .main {
+    margin-left: 0;
+  }
+}
   </style>
 </head>
 
@@ -808,16 +855,17 @@
       </div>
     </section>
   </main>
-  <footer class="text-center py-4">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <p class="mb-0">© 2025 Abdella Osman. All rights reserved.</p>
-          <p class="mb-0">Built with ❤️ using HTML, CSS, and JavaScript</p>
-        </div>
+<footer class="text-center py-4" style="margin-left: 110px;">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center">
+        <p class="mb-0">© 2025 Abdella Osman. All rights reserved.</p>
+        <p class="mb-0">Built with ❤️ using HTML, CSS, and JavaScript</p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
   <!-- Bootstrap JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
@@ -882,3 +930,4 @@
   </script>
 </body>
 </html>
+<!-- End of HTML Document -->
